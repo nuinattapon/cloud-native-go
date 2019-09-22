@@ -6,9 +6,12 @@ import (
 	"os"
 
 	"github.com/nuinattapon/cloud-native-go/api"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 func main() {
+	http.Handle("/metrics", promhttp.Handler())
+
 	http.HandleFunc("/", index)
 	http.HandleFunc("/api/echo", api.EchoHandleFunc)
 	http.HandleFunc("/api/hello", api.HelloHandleFunc)

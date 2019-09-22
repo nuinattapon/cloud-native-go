@@ -8,4 +8,4 @@ metadata:
 spec:
   backend:
     serviceName: cloud-native-go
-    servicePort: 8080
+    servicePort: "8080"

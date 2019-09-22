@@ -7,5 +7,5 @@
 **/README.md
 **/LICENSE
 **/.vscode
-**/*.yaml
+**/*.y?ml
 **/package-lock.json

@@ -9,6 +9,7 @@ spec:
   # use NodePort here to be able to access a port on each node
   type: NodePort
   ports:
-  - port: 8080
+    - port: 8080
+      nodePort: 31007
   selector:
     app: cloud-native-go
