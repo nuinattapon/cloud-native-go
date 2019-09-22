@@ -15,5 +15,5 @@ func EchoHandleFunc(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintln(w, message[0])
+	fmt.Fprintln(w, message[0]) // echo back the first elemenet in the message
 }
