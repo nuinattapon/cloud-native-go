@@ -7,7 +7,7 @@ import (
 
 // Hello response structure
 type Hello struct {
-	Message string
+	Message string `json:"message"`
 }
 
 // HelloHandleFunc to be used as http.HandleFunc for Hello API
