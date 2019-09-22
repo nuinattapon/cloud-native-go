@@ -9,7 +9,7 @@ metadata:
     tier: frontend
 spec:
   containers:
-    - image: gcr.io/nattapon/cloud-native-go:1.0.0
+    - image: gcr.io/nattapon/cloud-native-go
       name: cloud-native-go
       ports:
         - containerPort: 8080
