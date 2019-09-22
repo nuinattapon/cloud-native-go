@@ -12,9 +12,8 @@ func EchoHandleFunc(w http.ResponseWriter, r *http.Request) {
 
 	if len(message) == 0 {
 		fmt.Fprintf(w, "Nothing to echo - Please provide a message")
-	} else {
-		fmt.Fprintf(w, message[0])
+		return
 	}
 
-	fmt.Printf("Message %s\n", message)
+	fmt.Fprintln(w, message[0])
 }
