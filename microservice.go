@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/nuinattapon/go-play-ground/cloud-native-go/api"
+	"github.com/nuinattapon/cloud-native-go/api"
 )
 
 func main() {
